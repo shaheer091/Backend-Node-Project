@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="display: flex; align-items: center; justify-content: center; height: 100vh;width: 100vw;">
+    <form action="/signup" method="post" onsubmit="return checkValidation()">
+        <h1>Sign up</h1>
+        <label for="email">Enter email</label><br>
+        <input type="email" name="email" id="inputEmail" value="shaheerbinmuhammed6@gmail.com"><br>
+        <label for="password">Enter password</label><br>
+        <input type="password" name="password" id="inputPassword" onblur="checkValidation()"><br>
+        <p style="color: red;" id="errPass"></p><br>
+        <button type="submit">Sign up</button>
+        <p>Already have an account</p><a href="/login">Login</a>
+    </form>
+</body>
+
+<script src="../controller/validation.js"></script>
+
+</html>
